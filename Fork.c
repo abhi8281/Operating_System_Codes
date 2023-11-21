@@ -38,7 +38,7 @@ int main(){
    }else if (pid == 0){
      printf("Child process id : %ld",(long)getpid());
    }else{
-     printf("Parent process id : %ld",(long)getpid());
+     printf("\nParent process id : %ld\n",(long)getpid());
    }
 
    switch(pid){
