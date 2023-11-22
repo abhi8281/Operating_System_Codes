@@ -19,7 +19,7 @@ int main()
         printf("Waiting for the consumer...\n");
         fd1=open(FIFO_NAME1,O_WRONLY);
         fd2=open(FIFO_NAME2,O_RDONLY);
-        printf("got a consumer , type some stuff");
+        printf("got a consumer , type some stuff : ");
         fgets(s1,sizeof(s1),stdin);
 
         if((num=write(fd1,s1,strlen(s1))) == -1){
@@ -33,3 +33,4 @@ int main()
         }
 return 0;
 }
+
